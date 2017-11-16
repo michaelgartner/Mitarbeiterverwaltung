@@ -20,7 +20,7 @@ namespace Mitarbeiterverwaltung
 
                 Mitarbeiter ma = new Mitarbeiter();
 
-                /*ma.Name = "Gartner";
+            /*    ma.Name = "Gartner";
                 ma.Vorname = "Michael";
                 ma.GKlasse = "X1";
                 ma.Kontonummer = "010101";
@@ -29,7 +29,7 @@ namespace Mitarbeiterverwaltung
                 ma.Passwort = "Test1!";
                 ma.Benutzername = "MiGa";
 
-            me.Mitarbeiters.Add(ma);
+            me.Mitarbeiter.Add(ma);
 
             me.SaveChanges();*/
 
