@@ -71,8 +71,10 @@ namespace Mitarbeiterverwaltung
                 //MessageBox.Show(bp1 + "    " + bp2);
                 if (string.Equals(bp1.Trim(), bp2.Trim()))
                 {
-                    MessageBox.Show("Erfolg!");
-
+                    //MessageBox.Show("Erfolg!");
+                    frm_Login.ActiveForm.Visible = false;
+                    frm_Mitarbeiter m = new frm_Mitarbeiter();
+                    m.Visible = true;
                 }
             }
             //MessageBox.Show(mid.ToString());

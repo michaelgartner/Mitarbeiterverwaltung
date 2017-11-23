@@ -28,133 +28,126 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lbl_name = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lbl_kn = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lbl_uebest = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.lbl_gk = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.lbl_bv = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.lbl_KNr = new System.Windows.Forms.Label();
+            this.lbl_UeBest = new System.Windows.Forms.Label();
+            this.lbl_GKlasse = new System.Windows.Forms.Label();
+            this.lbl_Verd = new System.Windows.Forms.Label();
+            this.btn_Schliessen = new System.Windows.Forms.Button();
+            this.lbl_Name = new System.Windows.Forms.Label();
+            this.tbx_KNr = new System.Windows.Forms.TextBox();
+            this.tbx_UeBest = new System.Windows.Forms.TextBox();
+            this.tbx_GKlasse = new System.Windows.Forms.TextBox();
+            this.tbx_Verd = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // lbl_name
+            // lbl_KNr
             // 
-            this.lbl_name.AutoSize = true;
-            this.lbl_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_name.Location = new System.Drawing.Point(24, 37);
-            this.lbl_name.Name = "lbl_name";
-            this.lbl_name.Size = new System.Drawing.Size(151, 20);
-            this.lbl_name.TabIndex = 0;
-            this.lbl_name.Text = "Vor- und Nachname";
+            this.lbl_KNr.AutoSize = true;
+            this.lbl_KNr.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_KNr.Location = new System.Drawing.Point(12, 55);
+            this.lbl_KNr.Name = "lbl_KNr";
+            this.lbl_KNr.Size = new System.Drawing.Size(107, 18);
+            this.lbl_KNr.TabIndex = 1;
+            this.lbl_KNr.Text = "Kontonummer:";
             // 
-            // label1
+            // lbl_UeBest
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(22, 78);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(107, 18);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Kontonummer:";
+            this.lbl_UeBest.AutoSize = true;
+            this.lbl_UeBest.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_UeBest.Location = new System.Drawing.Point(12, 110);
+            this.lbl_UeBest.Name = "lbl_UeBest";
+            this.lbl_UeBest.Size = new System.Drawing.Size(181, 18);
+            this.lbl_UeBest.TabIndex = 3;
+            this.lbl_UeBest.Text = "Überweisungsbestätigung:";
             // 
-            // lbl_kn
+            // lbl_GKlasse
             // 
-            this.lbl_kn.AutoSize = true;
-            this.lbl_kn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_kn.Location = new System.Drawing.Point(22, 98);
-            this.lbl_kn.Name = "lbl_kn";
-            this.lbl_kn.Size = new System.Drawing.Size(29, 18);
-            this.lbl_kn.TabIndex = 2;
-            this.lbl_kn.Text = "KN";
+            this.lbl_GKlasse.AutoSize = true;
+            this.lbl_GKlasse.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_GKlasse.Location = new System.Drawing.Point(9, 165);
+            this.lbl_GKlasse.Name = "lbl_GKlasse";
+            this.lbl_GKlasse.Size = new System.Drawing.Size(106, 18);
+            this.lbl_GKlasse.TabIndex = 5;
+            this.lbl_GKlasse.Text = "Gehaltsklasse:";
             // 
-            // label2
+            // lbl_Verd
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(22, 130);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(181, 18);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Überweisungsbestätigung:";
+            this.lbl_Verd.AutoSize = true;
+            this.lbl_Verd.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Verd.Location = new System.Drawing.Point(9, 220);
+            this.lbl_Verd.Name = "lbl_Verd";
+            this.lbl_Verd.Size = new System.Drawing.Size(143, 18);
+            this.lbl_Verd.TabIndex = 7;
+            this.lbl_Verd.Text = "Bisheriger Verdienst:";
             // 
-            // lbl_uebest
+            // btn_Schliessen
             // 
-            this.lbl_uebest.AutoSize = true;
-            this.lbl_uebest.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_uebest.Location = new System.Drawing.Point(22, 148);
-            this.lbl_uebest.Name = "lbl_uebest";
-            this.lbl_uebest.Size = new System.Drawing.Size(197, 18);
-            this.lbl_uebest.TabIndex = 4;
-            this.lbl_uebest.Text = "nicht überwiesen/überwiesen";
+            this.btn_Schliessen.Location = new System.Drawing.Point(162, 267);
+            this.btn_Schliessen.Name = "btn_Schliessen";
+            this.btn_Schliessen.Size = new System.Drawing.Size(141, 25);
+            this.btn_Schliessen.TabIndex = 9;
+            this.btn_Schliessen.Text = "Schließen";
+            this.btn_Schliessen.UseVisualStyleBackColor = true;
+            this.btn_Schliessen.Click += new System.EventHandler(this.btn_Schliessen_Click);
             // 
-            // label3
+            // lbl_Name
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(22, 181);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(106, 18);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Gehaltsklasse:";
+            this.lbl_Name.AutoSize = true;
+            this.lbl_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
+            this.lbl_Name.Location = new System.Drawing.Point(12, 16);
+            this.lbl_Name.Name = "lbl_Name";
+            this.lbl_Name.Size = new System.Drawing.Size(55, 20);
+            this.lbl_Name.TabIndex = 10;
+            this.lbl_Name.Text = "Name";
             // 
-            // lbl_gk
+            // tbx_KNr
             // 
-            this.lbl_gk.AutoSize = true;
-            this.lbl_gk.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_gk.Location = new System.Drawing.Point(22, 199);
-            this.lbl_gk.Name = "lbl_gk";
-            this.lbl_gk.Size = new System.Drawing.Size(114, 18);
-            this.lbl_gk.TabIndex = 6;
-            this.lbl_gk.Text = "P1/X1/X2/X3/X4";
+            this.tbx_KNr.Enabled = false;
+            this.tbx_KNr.Location = new System.Drawing.Point(12, 76);
+            this.tbx_KNr.Name = "tbx_KNr";
+            this.tbx_KNr.Size = new System.Drawing.Size(291, 20);
+            this.tbx_KNr.TabIndex = 11;
             // 
-            // label4
+            // tbx_UeBest
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(22, 231);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(143, 18);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Bisheriger Verdienst:";
+            this.tbx_UeBest.Enabled = false;
+            this.tbx_UeBest.Location = new System.Drawing.Point(12, 131);
+            this.tbx_UeBest.Name = "tbx_UeBest";
+            this.tbx_UeBest.Size = new System.Drawing.Size(291, 20);
+            this.tbx_UeBest.TabIndex = 12;
             // 
-            // lbl_bv
+            // tbx_GKlasse
             // 
-            this.lbl_bv.AutoSize = true;
-            this.lbl_bv.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_bv.Location = new System.Drawing.Point(22, 249);
-            this.lbl_bv.Name = "lbl_bv";
-            this.lbl_bv.Size = new System.Drawing.Size(60, 18);
-            this.lbl_bv.TabIndex = 8;
-            this.lbl_bv.Text = "100.000";
+            this.tbx_GKlasse.Enabled = false;
+            this.tbx_GKlasse.Location = new System.Drawing.Point(12, 186);
+            this.tbx_GKlasse.Name = "tbx_GKlasse";
+            this.tbx_GKlasse.Size = new System.Drawing.Size(291, 20);
+            this.tbx_GKlasse.TabIndex = 12;
             // 
-            // button1
+            // tbx_Verd
             // 
-            this.button1.Location = new System.Drawing.Point(157, 281);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(89, 23);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Schließen";
-            this.button1.UseVisualStyleBackColor = true;
+            this.tbx_Verd.Enabled = false;
+            this.tbx_Verd.Location = new System.Drawing.Point(12, 241);
+            this.tbx_Verd.Name = "tbx_Verd";
+            this.tbx_Verd.Size = new System.Drawing.Size(291, 20);
+            this.tbx_Verd.TabIndex = 12;
             // 
             // frm_Mitarbeiter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(258, 316);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.lbl_bv);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.lbl_gk);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.lbl_uebest);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.lbl_kn);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.lbl_name);
+            this.ClientSize = new System.Drawing.Size(315, 304);
+            this.Controls.Add(this.tbx_Verd);
+            this.Controls.Add(this.tbx_GKlasse);
+            this.Controls.Add(this.tbx_UeBest);
+            this.Controls.Add(this.tbx_KNr);
+            this.Controls.Add(this.lbl_Name);
+            this.Controls.Add(this.btn_Schliessen);
+            this.Controls.Add(this.lbl_Verd);
+            this.Controls.Add(this.lbl_GKlasse);
+            this.Controls.Add(this.lbl_UeBest);
+            this.Controls.Add(this.lbl_KNr);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "frm_Mitarbeiter";
             this.Text = "Mitarbeiterverwaltung";
@@ -164,16 +157,15 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label lbl_name;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label lbl_kn;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label lbl_uebest;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label lbl_gk;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label lbl_bv;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label lbl_KNr;
+        private System.Windows.Forms.Label lbl_UeBest;
+        private System.Windows.Forms.Label lbl_GKlasse;
+        private System.Windows.Forms.Label lbl_Verd;
+        private System.Windows.Forms.Button btn_Schliessen;
+        private System.Windows.Forms.Label lbl_Name;
+        private System.Windows.Forms.TextBox tbx_KNr;
+        private System.Windows.Forms.TextBox tbx_UeBest;
+        private System.Windows.Forms.TextBox tbx_GKlasse;
+        private System.Windows.Forms.TextBox tbx_Verd;
     }
 }

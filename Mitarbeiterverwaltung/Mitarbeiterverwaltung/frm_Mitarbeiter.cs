@@ -16,5 +16,10 @@ namespace Mitarbeiterverwaltung
         {
             InitializeComponent();
         }
+
+        private void btn_Schliessen_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
+        }
     }
 }
