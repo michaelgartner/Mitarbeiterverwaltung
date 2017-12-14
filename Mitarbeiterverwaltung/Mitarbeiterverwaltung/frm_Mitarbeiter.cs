@@ -32,8 +32,22 @@ namespace Mitarbeiterverwaltung
         {
             team05Entities me = new team05Entities();
             Mitarbeiter ma = new Mitarbeiter();
+            bool best = Convert.ToBoolean(me.Mitarbeiter.FirstOrDefault(c => c.Benutzername == username).UeBest);
 
             lbl_Name.Text = me.Mitarbeiter.FirstOrDefault(c => c.Benutzername == username).Name + " " + me.Mitarbeiter.FirstOrDefault(c => c.Benutzername == username).Vorname;
+            tbx_KNr.Text = me.Mitarbeiter.FirstOrDefault(c => c.Benutzername == username).Kontonummer;
+
+            if (best)
+            {
+                tbx_UeBest.Text = "Überwiesen";
+            }
+            else
+            {
+                tbx_UeBest.Text = "Nicht überwiesen";
+            }
+            
+            tbx_GKlasse.Text = me.Mitarbeiter.FirstOrDefault(c => c.Benutzername == username).GKlasse;
+            tbx_Verd.Text = Convert.ToString(me.Mitarbeiter.FirstOrDefault(c => c.Benutzername == username).Verdienst);
         }
     }
 }
