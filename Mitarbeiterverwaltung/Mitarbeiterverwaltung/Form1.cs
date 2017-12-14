@@ -16,11 +16,11 @@ namespace Mitarbeiterverwaltung
         {
             InitializeComponent();
 
-            team05Entities me = new team05Entities();
+            /*team05Entities me = new team05Entities();
 
                 Mitarbeiter ma = new Mitarbeiter();
 
-            /*    ma.Name = "Gartner";
+                ma.Name = "Gartner";
                 ma.Vorname = "Michael";
                 ma.GKlasse = "X1";
                 ma.Kontonummer = "010101";
@@ -31,9 +31,9 @@ namespace Mitarbeiterverwaltung
 
             me.Mitarbeiter.Add(ma);
 
-            me.SaveChanges();*/
+            me.SaveChanges();
 
-            me.Dispose();
+            me.Dispose();*/
         }
 
         private void btn_Abbrechen_Click(object sender, EventArgs e)
@@ -53,31 +53,39 @@ namespace Mitarbeiterverwaltung
         {
             team05Entities me = new team05Entities();
             Mitarbeiter ma = new Mitarbeiter();
-            string bn = tbx_bName.Text;
-            string bp1 = tbx_bPasswort.Text;
-            string bp2 = me.Mitarbeiter.FirstOrDefault(c => c.Benutzername == bn).Passwort;
-            Int32 mid = -1;
             try
             {
-                mid = me.Mitarbeiter.FirstOrDefault(c => c.Benutzername == bn).Id;
+                string bn = tbx_bName.Text;
+                string bp1 = tbx_bPasswort.Text;
+                string bp2 = me.Mitarbeiter.FirstOrDefault(c => c.Benutzername == bn).Passwort;
+                Int32 mid = -1;
+                try
+                {
+                    mid = me.Mitarbeiter.FirstOrDefault(c => c.Benutzername == bn).Id;
+                }
+                catch
+                {
+
+                }
+                
+                if (mid >= 0)
+                {
+                    //MessageBox.Show(bp1 + "    " + bp2);
+                    if (string.Equals(bp1.Trim(), bp2.Trim()))
+                    {
+                        //MessageBox.Show("Erfolg!");
+                        frm_Login.ActiveForm.Visible = false;
+                        frm_Mitarbeiter m = new frm_Mitarbeiter();
+                        //MessageBox.Show(bn);
+                        m.username = bn;
+                        m.Show();
+                    }
+                }
+                //MessageBox.Show(mid.ToString());
             }
             catch
-            {
-
+            { 
             }
-
-            if(mid >= 0)
-            {
-                //MessageBox.Show(bp1 + "    " + bp2);
-                if (string.Equals(bp1.Trim(), bp2.Trim()))
-                {
-                    //MessageBox.Show("Erfolg!");
-                    frm_Login.ActiveForm.Visible = false;
-                    frm_Mitarbeiter m = new frm_Mitarbeiter();
-                    m.Visible = true;
-                }
-            }
-            //MessageBox.Show(mid.ToString());
         }
     }
 }
