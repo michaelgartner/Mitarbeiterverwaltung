@@ -151,6 +151,7 @@
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "frm_Mitarbeiter";
             this.Text = "Mitarbeiterverwaltung";
+            this.Load += new System.EventHandler(this.frm_Mitarbeiter_Load_1);
             this.ResumeLayout(false);
             this.PerformLayout();
 

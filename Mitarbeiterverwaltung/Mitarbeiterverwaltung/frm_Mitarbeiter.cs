@@ -21,12 +21,19 @@ namespace Mitarbeiterverwaltung
         public frm_Mitarbeiter()
         {
             InitializeComponent();
-            tbx_KNr.Text = username;
         }
 
         private void btn_Schliessen_Click(object sender, EventArgs e)
         {
             Environment.Exit(0);
+        }
+
+        private void frm_Mitarbeiter_Load_1(object sender, EventArgs e)
+        {
+            team05Entities me = new team05Entities();
+            Mitarbeiter ma = new Mitarbeiter();
+
+            lbl_Name.Text = me.Mitarbeiter.FirstOrDefault(c => c.Benutzername == username).Name + " " + me.Mitarbeiter.FirstOrDefault(c => c.Benutzername == username).Vorname;
         }
     }
 }
